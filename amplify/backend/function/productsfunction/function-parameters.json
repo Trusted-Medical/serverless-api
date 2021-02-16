@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "storage": {
+      "serverlesstable": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ]
+    }
+  },
+  "lambdaLayers": []
+}

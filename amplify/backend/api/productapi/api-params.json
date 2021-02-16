@@ -1,0 +1,35 @@
+{
+    "paths": [
+        {
+            "name": "/products",
+            "lambdaFunction": "productsfunction",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/products"
+        }
+    ],
+    "resourceName": "productapi",
+    "apiName": "productapi",
+    "functionArns": [
+        {
+            "lambdaFunction": "productsfunction"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-serverlessapi-dev-163356-authRole",
+        "unAuthRoleName": "amplify-serverlessapi-dev-163356-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "productsfunction",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
