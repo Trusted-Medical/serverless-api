@@ -14,7 +14,7 @@ function App() {
   const [product, updateProduct] = useState(initialState)
   async function fetchProducts() {
     const products = await API.get('productapi', '/products')
-    //setProducts(products.data.Items)
+    setProducts(products.data.Items)
   }
   async function createProduct() {
     const { name, description, price } = product
