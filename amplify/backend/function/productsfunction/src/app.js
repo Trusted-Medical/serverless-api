@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and limitations 
 	STORAGE_SERVERLESSTABLE_NAME
 Amplify Params - DO NOT EDIT */
 const region = process.env.REGION
-const ddb_table_name = process.env.serverlesstable;
+const ddb_table_name = process.env.STORAGE_SERVERLESSTABLE_NAME;
 
 const AWS = require('aws-sdk')
 const uuid = require('uuid/v4')
